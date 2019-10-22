@@ -13,12 +13,17 @@
 	<nav class="navbar navbar-default navbar-static-top">
 		<div class="container">
 			<ul class="nav navbar-nav">
-				<li><a class="navbar-brand" href="{% url 'index' %}">BRAND</a></li> 
-				<li><a class="navbar-link" href="{% url 'admin:index' %}">Admin</a></li>
-				<li><a class="navbar-link" href="{% url 'basic_app:other' %}">Other</a></li>
+				<li><a class="navbar-brand" href="{% url 'index' %}">SITE ADMIN</a></li> 
+				<li><a class="navbar-link" href="{% url 'admin:index' %}">Another link to admin</a></li>
+				<li><a class="navbar-link" href="{% url 'basic_app:other' %}">Other page</a></li>
 			</ul>
 		</div>
 	</nav>
+	<div>
+		<p> This page is under development by <em>Kazi Imam Hasan</em>. He graduated from Shahjalal University of Science & Technology
+			in Industrial & Production Engineering and currently working as developer.</p>
+		<p></p>
+		<h3>This site is powered by Python.</h3>
 
 	<div class="container">
 		{% block body_block %}
